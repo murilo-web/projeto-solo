@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-size: cover;
+}
+
+.container{
+	width: 100%;
+	max-width: 1024px;
+	margin:0 auto;
+
+}
+
+.clear{
+    clear: both;
+}
+/*header*/
+header{
+    background-color: purple;
+    width: 100%;
+}
+
+header div.logo{
+    float: left;
+    margin:  0 10px;
+    font-size: 23px;
+
+}
+
+nav.menu-mobile{
+	float: right;
+	width: 28px;
+	height: 28px;
+	margin-top:5px;
+    margin-right: 5px;
+	cursor: pointer;
+	background-image: url('../img/menu-mobile.png');
+	background-size:100% 100%;
+	display: none;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	z-index: 999;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	background-color: purple;
+}
+
+nav.menu-mobile ul li{
+	text-transform: uppercase;
+}
+
+nav.menu-mobile ul li a{
+  text-decoration: none; 
+  color: black; 
+}
+
+nav.menu-mobile ul li{
+	padding:10px 0;
+}
+
+header nav.desktop ul{
+	list-style-type: none;
+}
+
+
+header nav.menu-desk{
+    float: right;
+}
+
+header nav.menu-desk ul{
+    list-style-type: none;
+}
+
+header nav.menu-desk ul li{
+    display: inline-block;
+    margin:15px;
+    margin-top: 3px;
+}
+header nav.menu-desk a{
+    color: black;
+    text-decoration: none;
+}
+
+/*imagem-top*/
+section.imagen-top{
+    width: 100%;
+}
+
+section.imagen-top div.bg{
+    width: 100%;
+    height: 560px;
+    background-color: #b4b4b4b4;
+    border: 3px solid black;
+}
+/*mosaico*/
+
+div.flex{
+    display: flex;
+}
+
+div.item-1-mosaico{
+    background-color: #b4b4b4b4;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    border: 3px solid black;
+}
+
+div.item-2-mosaico{
+	background-color: #4683AB;
+	padding:90px 40px;
+	width: 40%;
+}
+
+/*contato*/
+
+section.contato{
+    background-color:purple;  
+    padding-top: 5px; 
+}
+
+section.contato form{
+	max-width: 600px;
+	margin:30px auto;
+}
+
+section.contato h2{
+    padding-bottom: 20px;
+} 
+
+section.contato .form-wraper{
+    float: left;
+    padding: 5px;
+}
+
+section.contato input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 60px;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+section.contato input[type=email]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 60px;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+
+section.contato form{
+    text-align: center;
+}
+
+section.contato textarea{
+	font-size: 16px;
+	width: 100%;
+	border:1px solid #ccc;
+	height: 140px;
+	resize: none;
+}   
+
+section.contato form .form-wraper:nth-of-type(5){
+	text-align: center;
+}
+
+section.contato input[type=submit]{
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btn1{
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    border-bottom: 0;
+    background-color: #4683AB;
+}
+
+.w100{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    nav.menu-desk{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    div.flex{
+        display: block;
+    }
+    div.item-1-mosaico{
+        padding-top:80%;
+        width: 100%;
+    }
+    div.item-2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+
+}

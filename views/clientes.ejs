@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/lista.css" rel="stylesheet" type="text/css">
+    <title>pedidos</title>
+</head>
+<body>
+    <h2>Clientes cadastrados</h2>
+    
+    <ul>
+        
+        <% lista.forEach(function(user){ %>
+            <li><%= user.nome %></li>
+            <li><%= user.Email %></li>
+            <li><%= user.Telefone %></li>
+            <li><%= user.pedido %></li>
+            <li><%= user.id %></li> <br/>
+            
+        <% }) %>
+    </ul>
+</body>
+</html>

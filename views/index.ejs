@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <title>Doce estelar</title>
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            Doce <b>estelar</b>
+        </div>
+        <nav class="menu-desk">
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Depoimentos</a></li>
+                <li><a href="">Fsazer pedido</a></li>
+             </ul>
+        </nav>
+        
+        <nav class="menu-mobile">
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Depoimentos</a></li>
+                <li><a href="">Fsazer pedido</a></li>
+             </ul>
+        </nav>
+<div class="clear"></div>
+    </header>
+    
+    <section class="imagen-top">
+        <div class="container bg"></div>
+    </section><!--imagen-top-->
+
+     <section class="mosaico">
+          <div class="container">
+            <div class="flex">
+                <div class="item-1-mosaico"></div>
+                <div class="item-2-mosaico">
+                    <p>Exercitation tempor aute aliqua deserunt adipisicing est elit exercitation aliquip. Sit ipsum irure Lorem elit. Occaecat excepteur ullamco reprehenderit mollit incididunt consectetur anim eiusmod et qui. Fugiat tempor pariatur nulla occaecat reprehenderit et non. Sint dolore non sit aliquip duis.</p>
+                </div><!--item-2-mosaico-->
+            </div><!--flex-->
+            
+            <div class="flex">
+                <div class="item-1-mosaico" style="order:2;" ></div>
+                <div class="item-2-mosaico" style="order:1;">
+                    <p>Exercitation tempor aute aliqua deserunt adipisicing est elit exercitation aliquip. Sit ipsum irure Lorem elit. Occaecat excepteur ullamco reprehenderit mollit incididunt consectetur anim eiusmod et qui. Fugiat tempor pariatur nulla occaecat reprehenderit et non. Sint dolore non sit aliquip duis.</p>
+                </div><!--item-2-mosaico-->
+             </div><!--flex-->
+                
+             <div class="flex">
+                <div class="item-1-mosaico"></div>
+                <div class="item-2-mosaico">
+                    <p>Exercitation tempor aute aliqua deserunt adipisicing est elit exercitation aliquip. Sit ipsum irure Lorem elit. Occaecat excepteur ullamco reprehenderit mollit incididunt consectetur anim eiusmod et qui. Fugiat tempor pariatur nulla occaecat reprehenderit et non. Sint dolore non sit aliquip duis.</p>
+                </div><!--item-2-mosaico-->
+            </div><!--flex-->
+               
+            <div class="flex">
+                <div class="item-1-mosaico" style="order:2;" ></div>
+                   <div class="item-2-mosaico" style="order:1;">
+                    <p>Exercitation tempor aute aliqua deserunt adipisicing est elit exercitation aliquip. Sit ipsum irure Lorem elit. Occaecat excepteur ullamco reprehenderit mollit incididunt consectetur anim eiusmod et qui. Fugiat tempor pariatur nulla occaecat reprehenderit et non. Sint dolore non sit aliquip duis.</p>
+                </div><!--item-2-mosaico-->
+             </div><!--flex-->  
+         </div><!--container-->
+         <div class="clear"></div>
+     </section><!--mosaico-->
+
+    <section class="contato">
+        <div class="container"> 
+            <form method="post">
+                <h2>entre em contato e faça seu pedido </h2>
+                <div class="form-wraper w100">
+                    <input placeholder="nome completo" required name="nome" type="text">
+                </div>
+                
+                <div class="form-wraper w100">
+                    <input placeholder="e-mail" required name="Email" type="email">
+                </div>
+            
+                <div class="form-wraper w100">
+                    <input placeholder="Telefone" required name="Telefone" type="text"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+                </div>
+            
+                <div class="form-wraper w100">
+                    <textarea name="pedido" required placeholder="faça seu pedido"></textarea>
+                </div>
+                    <input class="btn1" type="submit"  />
+                <div class="clear"> </div>
+            </form>
+        </div><!--container-->
+    </section><!--contato-->
+        
+        
+</body>
+</html>
